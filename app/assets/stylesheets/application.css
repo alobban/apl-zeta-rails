@@ -12,7 +12,4 @@
  *= require_tree .
  */
 
-@import "page.css.scss";
-header {
-	background: url(apl_south.jpg) no-repeat right 0px;
-}
+@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic|Orbitron);

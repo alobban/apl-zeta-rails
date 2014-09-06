@@ -1,0 +1,118 @@
+<header>
+	<div id="bg-cover-rotator">
+		<div id="cover-1" class="cover" style="background: url(<%= asset_path 'jaguar.png' %>) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
+		<div id="cover-2" class="cover" style="display:none; background: url(<%= asset_path 'carousel/aplchi2.png' %>) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
+		
+	</div>
+	<!--	first section - Home	-->
+	<div>
+		<div id="home" class="intro-content home">
+			<div class="text-vcenter">
+				<h1 class="greek-letters">Alpha Psi Lambda</h1>
+				<h2 class="greek-name">Zeta Chapter<br /><small class="sub">University of Illinois Chicago</small></h2>
+				<h3 class="statement">We are more than a fraternity,<br> somos FAMILIA</h3>
+				<a href="#about" id="continue" class="btn btn-default btn-lg">&gt;</a>
+			</div>
+		</div>
+	</div>
+	<!--	/first section		-->
+	
+</header>
+
+<!--	second section		-->
+<section id="about" class="about">
+	<div id="filler" class="col-xs-12 col-md-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h1>About us</h1>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="thumbnail">
+							<%= image_tag "crest.png" %>
+							<div class="caption">
+								<h3>Alpha Psi Lambda Crest</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-8">
+						<div class="thumbnail">
+							<p class="write">Alpha Psi Lambda is the nation's <strong>First and Largest</strong> Co-ed Latino oriented Social Greek Fraternity. We are family-based organization that breaks through sterotypical boundaries and eases its way into a plethora of cultures.
+								We are a unique Greek Fraternity where only the Noblest Brothers and Sisters come together to form the great family that Alpha Psi Lambda represents.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--	/second section		-->
+
+<!--	third section		-->
+<section id="infoSection" class="cover">
+	<div id="history" class="col-md-6 col-xs-12">
+		<div class="transbox caption">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h1>Chapter History</h1>
+				</div>
+				<div class="panel-body">
+					<p class="write">
+						One night in October of 1991 at the UIC's Rafael Cintron Cultural Center, Eliezer Perez 
+						and Derrick Cabrera were talking about creating an organization. Saul Garcia, who is one 
+						of the Alpha Psi Lambda founders at the University of Illinois at Urbana-Champaign, began 
+						talks with both of them about the fraternity. They spoke about its history, community 
+						service, and that the fraternity being co-ed will be a learning experience. However, the 
+						family aspect of the fraternity caught the attention of the two students. After some 
+						research, they decided to start a new chapter of Alpha Psi Lambda at University of Illinois at Chicago. 
+					</p>
+					<p class="write">
+						Subsequently, they consulted the Northern Illinois University Chapter, and began recruiting 
+						people who were interested in establishing a new chapter. From the informational meetings, 
+						twenty one interested students were recruited, and on October 17, 1992 approval was given to 
+						NIU to charter the prospective group which had dropped to fifteen. 
+					</p>
+					<p class="write">
+						On April 24, 1993 at 3:24 AM, after being on line for <strong>155 days</strong> the twelve remaining students 
+						crossed over and the <strong>Alpha Psi Lambda, Zeta Chapter</strong> was <strong>founded</strong>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="community" class="col-md-6 col-xs-12">
+		<div class="transbox caption">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h1>Community Service</h1>
+				</div>
+				<div class="panel-body">
+					<div id="fixed-images">
+						<div id="services" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">
+									<%= image_tag( "community/aplzeta_comm1.png", :class => "img-responsive" ) %>
+								</div>
+								<div class="item">
+									<%= image_tag( "community/aplzeta_comm2.png", :class => "img-responsive" ) %>
+								</div>
+								<div class="item">
+									<%= image_tag( "community/aplzeta_comm3.png", :class => "img-responsive" ) %>
+								</div>
+								<div class="item">
+									<%= image_tag( "community/aplzeta_comm4.png", :class => "img-responsive" ) %>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-footer">
+					<p class="write">D&iacute;a Del Ni&ntilde;o Fair</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--	/third section		-->

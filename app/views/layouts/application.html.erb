@@ -2,16 +2,65 @@
 <html>
 <head>
   <title>Apl</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-	
-</header>
-<p>HEY</p>
-<%= yield %>
+<!-- navigation panel -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand cust-font" href="#bg-cover-rotator">ΑΨΛ - ZETA</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbar-collapse-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#bg-cover-rotator">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+							Informationals <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#history">History</a></li>
+							<li><a href="#community">Community Service</a></li>
+							<li><a href="http://www.alphapsilambda.net/" target="_blank">Nationals</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Members <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">E-Board</a></li>
+							<li><a href="#">Recent Lines</a></li>
+							<li><a href="#">Past Lines</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Recruitment</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!--	/navigation panel		-->
 
+<%= yield %>
+<!--	footer section		-->
+	<footer>
+		<div class="panel-footer">
+			<p style="font-family: Times; float: right;">
+				&copy; Copyright by &Alpha;&Psi;&Lambda;&#39;s <a href="http://www.linkedin.com/pub/andrew-lobban/39/94b/8aa/">Andrew Lobban</a>
+			</p>
+		</div>
+	</footer>
 </body>
 </html>
